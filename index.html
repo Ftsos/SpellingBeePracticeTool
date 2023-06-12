@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spelling Bee</title>
+</head>
+<body onload="main()">
+	<audio id="wordToSpell"></audio>
+	<div>
+		<button id="start" onclick="startButton()">Start</button>
+		<button id="next" onclick="nextButton()">Next</button>
+		<button id="revealWord" onclick="revealButton()">Reveal Word</button>
+		<button id="listen" onclick="listenButton()">Listen</button>
+		<button id="stopListening" style="display: none;" onclick="stopListeningButton()">Stop Listening</button>
+		<p id="WordRevealed"></p>
+		<p id="speechResult"></p>
+	</div>
+	<script type="text/javascript" src="./index.js"></script>
+	<p>Instrucciones:
+Para iniciar dale start
+Despues das click al boton Listen y abajo te va a aparecer lo q vas dictando, si paras se para d escuchar asi q le das a Stop Listening
+Next es para siguente palabra
+Y Reveal Word revela la palabra para ver si la dijiste correctamente
+
+lo de incorrect y correct puede fallar y seguramente va a fallar todo el tiempo
+	</p>
+</body>
+</html>
